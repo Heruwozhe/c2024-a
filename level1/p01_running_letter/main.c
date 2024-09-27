@@ -3,24 +3,25 @@
 #include <string.h>
 int main(void)
 {
-    char arr1[]="a                                               ";
+    int speed=100;
+    char arr1[]="a                                                            ";
     for(int i = 0;i<strlen(arr1)-1;i++)
     {
         printf("%s",arr1);
         arr1[i]=' ';
         arr1[i+1]='a';
-        Sleep(200);
+        Sleep(speed);
         system("cls");
     }
     printf("%s",arr1);
     system("cls");
-    Sleep(200);
+    Sleep(speed);
     for(int i = strlen(arr1)-1;i>0;i--)
     {
         printf("%s",arr1);
         arr1[i]=' ';
         arr1[i-1]='a';
-        Sleep(200);
+        Sleep(speed);
         system("cls");
     }
     printf("%s",arr1);
