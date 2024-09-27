@@ -2,7 +2,7 @@
 #include <math.h>
 int main(void){
     int num = 0;int i = 2;
-    printf("Please enter a integer:");
+    printf("Please enter a positive integer:");
     scanf_s("%d", &num);
     int dividing_number =(int)sqrt(num);
     for(;i<dividing_number+1;i++) {
